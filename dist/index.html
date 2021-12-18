@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+
+<body class="">
+    <section class="nav sticky top-0 z-[100]">
+        <nav class="bg-white shadow-md">
+            <div class=" flex justify-between justify-items-center items-center h-14">
+                <ul class="basis-1/4 flex justify-evenly items-center">
+                    <li class="draw-left2 hover:cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </li>
+                    <li class="logo text-xl hover:text-indigo-400">
+                        <a class=" hover:border-b-2 hover:border-indigo-500 font-bold" href="#">Pop Corn</a>
+                    </li>
+
+                </ul>
+
+                <ul class="hidden md:flex basis-1/2 items-center">
+                    <li class="nav-items mr-10 ">
+                        <a class="py-1 px-4 hover:bg-indigo-500 rounded hover:text-white " href="#">Home</a>
+                    </li>
+                    <li class="nav-items mr-10 ">
+                        <a class="py-1 px-4 hover:bg-indigo-500 rounded hover:text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-items mr-10 ">
+                        <a class="py-1 px-4 hover:bg-indigo-500 rounded hover:text-white" href="#">Contact</a>
+                    </li>
+                    <li class="nav-items mr-10 ">
+                        <a class="py-1 px-4 hover:bg-indigo-500 rounded hover:text-white" href="#">Articles</a>
+                    </li>
+                </ul>
+                <ul class="hidden basis-1/4 md:flex justify-center items-center">
+                    <li><a class="border rounded py-1 px-4 border-indigo-300 hover:bg-indigo-500 hover:text-white transition ease-in duration-300 mr-4"
+                            href="">Login</a></li>
+                    <li><a class="border rounded py-1 px-4 border-indigo-300 bg-indigo-500 hover:bg-indigo-400 text-white transition ease-in duration-300"
+                            href="">Register</a></li>
+                </ul>
+                <ul class="block md:hidden mr-10" id="burger">
+                    <li class="hover:text-indigo-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:cursor-pointer" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- mobile divice -->
+            <ul class="shadow-md transform -translate-y-full transition duration-500 ease-in-out w-full   absolute  top-0 bg-white pb-5 md:hidden"
+                id="list-items">
+                <li class="nav-items flex justify-items-start my-4  cursor-pointer hover:text-indigo-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    <a href="#">
+                        <span class=" hover:border-b-2 hover:border-indigo-500">Home</span>
+                    </a>
+                </li>
+                <li class="nav-items flex justify-items-start my-4 cursor-pointer hover:text-indigo-400"">
+                    <svg xmlns=" http://www.w3.org/2000/svg" class="h-6 w-6 mx-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <span class="  hover:border-b-2 hover:border-indigo-500">About Us</span>
+                </li>
+                <li class="nav-items flex justify-items-start my-4 cursor-pointer hover:text-indigo-400"">
+                    <svg xmlns=" http://www.w3.org/2000/svg" class="h-6 w-6 mx-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 3l-6 6m0 0V4m0 5h5M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z" />
+                    </svg>
+                    <span class=" hover:border-b-2 hover:border-indigo-500">Contact</span>
+                </li>
+                <li class="nav-items flex justify-items-start my-4 cursor-pointer hover:text-indigo-400"">
+                    <svg xmlns=" http://www.w3.org/2000/svg" class="h-6 w-6 mx-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                    </svg>
+                    <span class=" hover:border-b-2 hover:border-indigo-500">News</span>
+                </li>
+                <li class="ml-5 mb-4"><a
+                        class="border rounded py-1 px-4 border-indigo-300 hover:bg-indigo-500 hover:text-white transition ease-in duration-300 mr-4"
+                        href="">Login</a></li>
+                <li class="ml-5 mt-2"><a
+                        class="border rounded py-1 px-4 border-indigo-300 bg-indigo-500 hover:bg-indigo-400 text-white transition ease-in duration-300"
+                        href="">Register</a></li>
+
+            </ul>
+
+            <!-- aside navbar -->
+            <div class="aside-bar transform -translate-x-full  transition duration-500 ease-in-out absolute top-0 left-0 h-screen w-64 bg-blue-800 text-white flex flex-col "
+                id="left-bar">
+                <ul class="h-12 flex items-center justify-evenly mb-12">
+                    <li class="logo text-xl"><a class="font-bold" href="">Pop Corn</a></li>
+                    <li class="draw-left1 hover:cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
+                        </svg>
+                    </li>
+                </ul>
+                <ul class="aside-nav">
+                    <li class="list-items py-2 mx-2 rounded  hover:text-indigo-600 hover:bg-white"><a
+                            class="flex items-center" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-10 mr-4" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path
+                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                            </svg>
+                            <span>Project</span></a></li>
+                    <li class="list-items py-2 mx-2 rounded hover:text-indigo-600 hover:bg-white"><a
+                            class="flex items-center" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-10 mr-4" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                            <span>Article</span></a></li>
+                    <li class="list-items py-2 mx-2 rounded hover:text-indigo-600 hover:bg-white"><a
+                            class="flex items-center" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-10 mr-4" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                            <span>Company</span></a></li>
+                    <li class="list-items py-2 mx-2 rounded hover:text-indigo-600 hover:bg-white">
+                        <a class="flex items-center" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-10 mr-4" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </section>
+
+    <section>
+        <div class="m-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <img class="w-full  rounded transition transform hover:scale-105 ease-out duration-500"
+                src="./assets/img2.png" />
+            <img class="w-full  rounded transition transform hover:scale-105 ease-out duration-500"
+                src="./assets/img3.png" />
+            <img class="w-full  rounded transition transform hover:scale-105 ease-out duration-500"
+                src="./assets/img1.png" />
+            <img class="w-full  rounded transition transform hover:scale-105 ease-out duration-500"
+                src="./assets/img1.png" />
+            <img class="w-full  rounded transition transform hover:scale-105 ease-out duration-500"
+                src="./assets/img2.png" />
+            <img class="w-full  rounded transition transform hover:scale-105 ease-out duration-500"
+                src="./assets/img3.png" />
+        </div>
+    </section>
+
+    <section>
+        <div class=" h-32 w-full bg-gray-800">
+             
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
