@@ -25,28 +25,36 @@
 
                 </ul>
 
-                <ul class="hidden md:flex basis-1/2 items-center">
-                    <li class="nav-items mr-10 ">
-                        <a class="py-1 px-4 hover:bg-indigo-500 rounded hover:text-white " href="#">Home</a>
+                <ul class="hidden md:flex basis-1/4 justify-center items-center">
+                    <li class="nav-items lg:mr-10 py-1 px-4 rounded hover:bg-indigo-100 hover:text-blue-800">
+                        <a class=" " href="#">Home</a>
                     </li>
-                    <li class="nav-items mr-10 ">
-                        <a class="py-1 px-4 hover:bg-indigo-500 rounded hover:text-white" href="#">About</a>
+                    <li class="nav-items lg:mr-10 py-1 px-4 rounded hover:bg-indigo-100 hover:text-blue-800">
+                        <a class="" href="#">About</a>
                     </li>
-                    <li class="nav-items mr-10 ">
-                        <a class="py-1 px-4 hover:bg-indigo-500 rounded hover:text-white" href="#">Contact</a>
+                    <li class="nav-items lg:mr-10 py-1 px-4 rounded hover:bg-indigo-100 hover:text-blue-800">
+                        <a class="" href="#">Contact</a>
                     </li>
-                    <li class="nav-items mr-10 ">
-                        <a class="py-1 px-4 hover:bg-indigo-500 rounded hover:text-white" href="#">Articles</a>
+                    <li class="nav-items lg:mr-10 py-1 px-4 rounded relative group hover:bg-indigo-100 hover:text-blue-800">
+                        <a class="" href="#">Articles</a>
+                        <ul class="drop-down absolute top-5 left-2 h-auto hidden group-hover:block bg-white shadow-sm w-44 border rounded">
+                            <li class="dropdown-items my-2 mx-2 px-2 py-2 hover:bg-indigo-100 hover:text-blue-800 rounded"><a href="#">Items</a></li>
+                            <li class="dropdown-items my-2 mx-2 px-2 py-2 hover:bg-indigo-100 hover:text-blue-800 rounded"><a href="#">Items</a></li>
+                            <li class="dropdown-items my-2 mx-2 px-2 py-2 hover:bg-indigo-100 hover:text-blue-800 rounded"><a href="#">Items</a></li>
+                            <li class="dropdown-items my-2 mx-2 px-2 py-2 hover:bg-indigo-100 hover:text-blue-800 rounded "><a href="#">Items</a></li>
+                        </ul>
                     </li>
                 </ul>
-                <div class="relative">
+
+                <div class="relative basis-1/4 flef justify-end">
                     <div class="absolute right-0 top-2 mr-2 text-gray-400 ">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                           </svg>
                     </div>
-                    <input placeholder="Search.." class="border-2 rounded-lg w-auto py-1 px-4 focus:outline-none focus:border-indigo-500 " type="text">
+                    <input placeholder="Search.." class="w-full border-2 rounded-lg py-1 px-4 focus:outline-none focus:border-indigo-500 " type="text">
                 </div>
+                
                 <ul class="hidden basis-1/4 md:flex justify-center items-center">
                     <li><a class="border rounded py-1 px-4 border-indigo-300 hover:bg-indigo-500 hover:text-white transition ease-in duration-300 mr-4"
                             href="">Login</a></li>
