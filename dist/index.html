@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
-    <title>Document</title>
+    <title>PopCorn</title>
 </head>
 
 <body class="">
@@ -14,13 +14,16 @@
         <nav class="bg-white shadow-md">
             <div class=" flex justify-between justify-items-center items-center h-14">
                 <ul class="basis-1/4 flex justify-evenly items-center">
-                    <li class="draw-left2 hover:cursor-pointer hover:text-indigo-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                          </svg>
+                    <li class="draw-left hover:cursor-pointer hover:text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
                     </li>
                     <li class="logo text-xl ">
-                        <a class=" hover:border-b-2 text-gray-700 hover:border-indigo-500 hover:text-indigo-400 font-bold" href="#">Pop Corn</a>
+                        <a class=" hover:border-b-2 text-indigo-400 hover:border-indigo-500 hover:text-indigo-500 font-bold"
+                            href="#">Pop Corn</a>
                     </li>
 
                 </ul>
@@ -35,26 +38,40 @@
                     <li class="nav-items lg:mr-10 py-1 px-4 rounded hover:bg-indigo-100 hover:text-blue-800">
                         <a class="" href="#">Contact</a>
                     </li>
-                    <li class="nav-items lg:mr-10 py-1 px-4 rounded relative group hover:bg-indigo-100 hover:text-blue-800">
+                    <li
+                        class="nav-items lg:mr-10 py-1 px-4 rounded relative group hover:bg-indigo-100 hover:text-blue-800">
                         <a class="" href="#">Articles</a>
-                        <ul class="drop-down absolute top-5 left-2 h-auto hidden group-hover:block bg-white shadow-sm w-44 border rounded">
-                            <li class="dropdown-items my-2 mx-2 px-2 py-2 hover:bg-indigo-100 hover:text-blue-800 rounded"><a href="#">Items</a></li>
-                            <li class="dropdown-items my-2 mx-2 px-2 py-2 hover:bg-indigo-100 hover:text-blue-800 rounded"><a href="#">Items</a></li>
-                            <li class="dropdown-items my-2 mx-2 px-2 py-2 hover:bg-indigo-100 hover:text-blue-800 rounded"><a href="#">Items</a></li>
-                            <li class="dropdown-items my-2 mx-2 px-2 py-2 hover:bg-indigo-100 hover:text-blue-800 rounded "><a href="#">Items</a></li>
+                        <ul
+                            class="drop-down absolute top-5 left-2 h-auto hidden group-hover:block bg-white shadow-sm w-44 border rounded z-50">
+                            <li
+                                class="dropdown-items my-2 mx-2 px-2 py-2 hover:bg-indigo-100 hover:text-blue-800 rounded">
+                                <a href="#">Items</a></li>
+                            <li
+                                class="dropdown-items my-2 mx-2 px-2 py-2 hover:bg-indigo-100 hover:text-blue-800 rounded">
+                                <a href="#">Items</a></li>
+                            <li
+                                class="dropdown-items my-2 mx-2 px-2 py-2 hover:bg-indigo-100 hover:text-blue-800 rounded">
+                                <a href="#">Items</a></li>
+                            <li
+                                class="dropdown-items my-2 mx-2 px-2 py-2 hover:bg-indigo-100 hover:text-blue-800 rounded ">
+                                <a href="#">Items</a></li>
                         </ul>
                     </li>
                 </ul>
 
-                <div class="relative basis-1/4 flef justify-end">
+                <div class="relative md:basis-1/4 basis-2/4">
                     <div class="absolute right-0 top-2 mr-2 text-gray-400 ">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
                     </div>
-                    <input placeholder="Search.." class="w-full border-2 rounded-lg py-1 px-4 focus:outline-none focus:border-indigo-500 " type="text">
+                    <input placeholder="Search.."
+                        class="w-full border-2 rounded-lg py-1 px-4 focus:outline-none focus:border-indigo-500 "
+                        type="text">
                 </div>
-                
+
                 <ul class="hidden basis-1/4 md:flex justify-center items-center">
                     <li><a class="border rounded py-1 px-4 border-indigo-300 hover:bg-indigo-500 hover:text-white transition ease-in duration-300 mr-4"
                             href="">Login</a></li>
@@ -119,20 +136,11 @@
             </ul>
 
             <!-- aside navbar -->
-            <div class="aside-bar transform -translate-x-full  transition duration-500 ease-in-out absolute top-0 left-0 h-screen w-64 bg-blue-800 text-white flex flex-col "
+            <div class="aside-bar transform -translate-x-full  transition duration-500 ease-in-out absolute top-14 left-0 h-screen w-64 bg-blue-800 text-white flex flex-col"
                 id="left-bar">
-                <ul class="h-12 flex items-center justify-evenly mb-12">
-                    <li class="logo text-xl"><a class="font-bold" href="">Pop Corn</a></li>
-                    <li class="draw-left1 hover:cursor-pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
-                        </svg>
-                    </li>
-                </ul>
+
                 <ul class="aside-nav">
-                    <li class="list-items py-2 mx-2 rounded  hover:text-indigo-600 hover:bg-white"><a
+                    <li class="list-items py-2 mx-2 rounded  hover:text-indigo-600 hover:bg-white mt-4"><a
                             class="flex items-center" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-10 mr-4" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
@@ -143,7 +151,7 @@
                                     d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
                             </svg>
                             <span>Project</span></a></li>
-                    <li class="list-items py-2 mx-2 rounded hover:text-indigo-600 hover:bg-white"><a
+                    <li class="list-items py-2 mx-2 rounded hover:text-indigo-600 hover:bg-white my-2"><a
                             class="flex items-center" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-10 mr-4" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
@@ -151,7 +159,7 @@
                                     d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                             </svg>
                             <span>Article</span></a></li>
-                    <li class="list-items py-2 mx-2 rounded hover:text-indigo-600 hover:bg-white"><a
+                    <li class="list-items py-2 mx-2 rounded hover:text-indigo-600 hover:bg-white my-2"><a
                             class="flex items-center" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-10 mr-4" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
@@ -159,7 +167,7 @@
                                     d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                             </svg>
                             <span>Company</span></a></li>
-                    <li class="list-items py-2 mx-2 rounded hover:text-indigo-600 hover:bg-white">
+                    <li class="list-items py-2 mx-2 rounded hover:text-indigo-600 hover:bg-white my-2">
                         <a class="flex items-center" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-10 mr-4" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
@@ -198,7 +206,7 @@
     <!-- footer -->
     <section>
         <div class=" h-32 w-full bg-gray-800">
-             
+
         </div>
     </section>
 

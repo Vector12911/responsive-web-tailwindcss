@@ -13,21 +13,14 @@ burger.addEventListener('click',()=>{
     list.classList.toggle("-translate-y-full");
 })
 
-const drawLeftBtn1 = document.querySelector(".draw-left1");
-const asideBar1 = document.querySelector("#left-bar");
+
+const drawLeftBtn = document.querySelector(".draw-left");
+const asideBar = document.querySelector("#left-bar");
 // console.log(drawLeftBtn);
 // console.log(asideBar);
-drawLeftBtn1.addEventListener('click',()=>{
+drawLeftBtn.addEventListener('click',()=>{
     console.log("anjali love you")
-    asideBar1.classList.toggle("-translate-x-full")
-})
-const drawLeftBtn2 = document.querySelector(".draw-left2");
-const asideBar2 = document.querySelector("#left-bar");
-// console.log(drawLeftBtn);
-// console.log(asideBar);
-drawLeftBtn2.addEventListener('click',()=>{
-    console.log("anjali love you")
-    asideBar2.classList.toggle("-translate-x-full")
+    asideBar.classList.toggle("-translate-x-full")
 })
 
 // const toggle = document.querySelector("#toggle");
