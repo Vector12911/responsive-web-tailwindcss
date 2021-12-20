@@ -11,7 +11,7 @@
 
 <body class="">
     <section class="nav sticky top-0 z-[100]">
-        <nav class="bg-white shadow-md">
+        <nav class="bg-white shadow-md" id="header">
             <div class=" flex justify-between justify-items-center items-center h-14">
                 <ul class="basis-1/4 flex justify-evenly items-center">
                     <li class="draw-left hover:cursor-pointer hover:text-indigo-400">
@@ -21,25 +21,28 @@
                                 d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </li>
-                    <li class="logo text-xl ">
-                        <a class=" hover:border-b-2 text-indigo-400 hover:border-indigo-500 hover:text-indigo-500 font-bold"
-                            href="#">Pop Corn</a>
+                    <li class="logo text-xl flex items-center group">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-indigo-400 group-hover:text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                          </svg>
+                        <a class=" hover:border-b-2 text-indigo-400 group-hover:border-indigo-500 group-hover:text-indigo-500 font-bold"
+                            href="#">PopCorn</a>
                     </li>
 
                 </ul>
 
                 <ul class="hidden md:flex basis-1/4 justify-center items-center">
-                    <li class="nav-items lg:mr-10 py-1 px-4 rounded hover:bg-indigo-100 hover:text-blue-800">
+                    <li class="nav-items py-1 px-4 rounded hover:bg-indigo-100 hover:text-blue-800">
                         <a class=" " href="#">Home</a>
                     </li>
-                    <li class="nav-items lg:mr-10 py-1 px-4 rounded hover:bg-indigo-100 hover:text-blue-800">
+                    <li class="nav-items py-1 px-4 rounded hover:bg-indigo-100 hover:text-blue-800">
                         <a class="" href="#">About</a>
                     </li>
-                    <li class="nav-items lg:mr-10 py-1 px-4 rounded hover:bg-indigo-100 hover:text-blue-800">
+                    <li class="nav-items py-1 px-4 rounded hover:bg-indigo-100 hover:text-blue-800">
                         <a class="" href="#">Contact</a>
                     </li>
                     <li
-                        class="nav-items lg:mr-10 py-1 px-4 rounded relative group hover:bg-indigo-100 hover:text-blue-800">
+                        class="nav-items py-1 px-4 rounded relative group hover:bg-indigo-100 hover:text-blue-800">
                         <a class="" href="#">Articles</a>
                         <ul
                             class="drop-down absolute top-5 left-2 h-auto hidden group-hover:block bg-white shadow-sm w-44 border rounded z-50">
@@ -72,11 +75,16 @@
                         type="text">
                 </div>
 
-                <ul class="hidden basis-1/4 md:flex justify-center items-center">
+                <ul class="hidden basis-1/5 md:flex justify-end items-center">
                     <li><a class="border rounded py-1 px-4 border-indigo-300 hover:bg-indigo-500 hover:text-white transition ease-in duration-300 mr-4"
                             href="">Login</a></li>
                     <li><a class="border rounded py-1 px-4 border-indigo-300 bg-indigo-500 hover:bg-indigo-400 text-white transition ease-in duration-300"
                             href="">Register</a></li>
+                </ul>
+                <ul class="basis-1/12 flex justify-center light" id="theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                      </svg>
                 </ul>
                 <ul class="block md:hidden mr-10" id="burger">
                     <li class="hover:text-indigo-500">
@@ -87,6 +95,7 @@
                         </svg>
                     </li>
                 </ul>
+                
 
             </div>
             <!-- mobile divice -->
@@ -204,8 +213,8 @@
     </section>
 
     <!-- footer -->
-    <section>
-        <div class=" h-32 w-full bg-gray-800">
+    <section class="">
+        <div class="relative bottom-0 h-32 w-full bg-gray-800">
 
         </div>
     </section>
